@@ -1,0 +1,81 @@
+/* Custom styling */
+* {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.me {
+    opacity: 0.7;
+}
+.salaum {
+    letter-spacing: 5px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    min-height: calc(100vh - 0px); /* Adjusts to fill screen, considering header and footer height */
+}
+
+.proj-name {
+    color: black;
+}
+.card-img-top {
+    object-fit: cover; /* Cover the container without distortion */
+    height: 200px; /* Set a fixed height */
+    width: 100%; /* Full width of the container */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 1%;
+}
+.navbar {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* TYPE WRITER effect*/
+.typewriter {
+    font-size: 2em;
+    overflow: hidden; /* Hides overflowing text */
+    display: flex; /* Aligns text and cursor inline */
+    align-items: center; /* Vertically aligns text and cursor */
+}
+
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
+}
+
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #c5c5c5;
+    padding: 20px 0;
+    text-align: center;
+}
